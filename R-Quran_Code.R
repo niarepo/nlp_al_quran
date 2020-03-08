@@ -277,10 +277,12 @@ for(i in 1:nrow(top_words))
 }
 
 
+png(paste0("word_cluster_20.png"), width = 1024, height = 768, type=c('cairo'),res=150,pointsize=8)
 tdm2 <- removeSparseTerms(tdm, sparse = 0.94)
 hc <- hclust(d = dist(tdm2, method = "canberra"), method = "complete")
 plot(hc)
 plot(hc, xlab="xlab", ylab="ylab", main=surah, sub="")
+dev.off()
 
 
 assoc <- as.data.frame(head(findAssocs(tdm, terms = toString("bosan"),corlimit = 0.00001),100000))
