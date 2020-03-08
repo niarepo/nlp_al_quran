@@ -16,7 +16,7 @@
 * FME Desktop
 * RStudio
 * R 3.4.4
-* Zorin 12.1 Linux
+* Zorin 12.04 Ubuntu Linux
 
 ## Installation
 
