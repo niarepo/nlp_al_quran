@@ -1,7 +1,7 @@
 # Al-Quran Karim NLP using R
 
 * Al-Quran Karim Malay keyword analysis using R
-* The Malay translation is from - http://www.surah.my
+* The Malay translation source is from - http://www.surah.my
 
 ## Changes Log
 * 1.0 - Committing code to github
