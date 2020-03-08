@@ -1,4 +1,4 @@
-# Al-Quran Karim NLP using R
+# Al-Quran Karim NLP using R (Malay Language)
 
 ![Image description](Rplot01.png)
 
