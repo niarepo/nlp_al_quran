@@ -42,7 +42,7 @@ print(df_summary_q)
 DataExplorer::plot_boxplot(df_summary_q , by = "juzuk")
 
 
-mining <- q_content %>% filter(juz == 2) 
+mining <- q_content %>% filter(juz == 56) 
 surah <- unique(mining$surah)
 
 q_juz_summary <- dbReadTable(conn,"q_juz_summary")
@@ -142,7 +142,7 @@ plot.new()
 text(x=0.5, y=0.5, paste0("WordCloud ",surah))
 suppressWarnings(suppressMessages(wordcloud(dm$word, dm$freq , random.order=F, colors = colors, min.freq=1, max.words=200 ,  rot.per=0.55)))
 
-assoc <- as.data.frame(head(findAssocs(tdm, terms = toString("allah"),corlimit = 0.00001),100000))
+assoc <- as.data.frame(head(findAssocs(tdm, terms = toString("mani"),corlimit = 0.00001),100000))
 assoc$watchword <- rownames(assoc)
 rownames(assoc) <- c()
 names(assoc)[1] = "correlation"

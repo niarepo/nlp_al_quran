@@ -17,6 +17,8 @@
 * http://abdulbaqi.io/2019/01/15/quranic_roots/
 * http://textminingthequran.com/
 * https://www.researchgate.net/publication/321165167_Natural_Language_Processing_Approach_for_Searching_the_Quran_Quick_and_Intuitive
+* https://nlp.stanford.edu/~johnhew/structural-probe.html
+* https://towardsdatascience.com/getting-to-grips-with-parse-trees-6e19e7cd3c3c
 
 ## Changes Log
 * 1.0 - Committing code to github
