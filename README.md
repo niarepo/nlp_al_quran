@@ -32,7 +32,6 @@ library(quanteda)
 ```
 
 ## Usage
-
 In progress
 
 ## Contributing
@@ -41,3 +40,6 @@ Please make sure to update tests as appropriate.
 
 ## License
 [FREE](https://opensource.org/licenses)
+
+## Contact
+Please drop email to akunyer[A]gmail.com
