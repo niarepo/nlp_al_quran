@@ -9,6 +9,15 @@
 * The Malay translation source is from - http://www.surah.my . Thanks.
 * Original arabic version is from - https://github.com/niarepo/quran-nlp . Thanks
 
+## Other research
+
+* https://blog.cinqmarsmedia.com/is-islam-a-religion-of-peace-aea607622476
+* https://www.kaggle.com/zusmani/the-holy-quran/discussion/42994
+* https://ieeexplore.ieee.org/document/8566248
+* http://abdulbaqi.io/2019/01/15/quranic_roots/
+* http://textminingthequran.com/
+* https://www.researchgate.net/publication/321165167_Natural_Language_Processing_Approach_for_Searching_the_Quran_Quick_and_Intuitive
+
 ## Changes Log
 * 1.0 - Committing code to github
 
