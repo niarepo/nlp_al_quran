@@ -1,6 +1,10 @@
 # Al-Quran Karim NLP using R
 
-Foobar is a Python library for dealing with word pluralization.
+* Al-Quran Karim Malay keyword analysis using R
+* The Malay translation is from - http://www.surah.my
+
+## Changes Log
+* 1.0 - Committing code to github
 
 ## Installation
 
@@ -16,7 +20,6 @@ library(DataExplorer)
 library(tm)
 library(wordcloud)
 library(quanteda)
-
 ```
 
 ## Usage
