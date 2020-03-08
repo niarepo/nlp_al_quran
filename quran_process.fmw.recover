@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <RECOVERY_FILE HWND="56623123" COMPUTER_NAME="vanguard-zorin" USER_NAME="vanguard" VERSION="">
+  <UNDO_STATE FILE="/tmp/wb_recovery_1583682735882_29391"/>
   <FULL_INSPECTION_CACHE DIR="/tmp/wb-cache--T29391"/>
 </RECOVERY_FILE>
