@@ -6,6 +6,12 @@
 ## Changes Log
 * 1.0 - Committing code to github
 
+## Tools
+* FME Desktop
+* RStudio
+* R 3.4.4
+* Zorin 12.1 Linux
+
 ## Installation
 
 Use the R , please install below components
