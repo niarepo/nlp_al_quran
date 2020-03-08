@@ -1,5 +1,4 @@
-# nlp_al_quran
-# Foobar
+# Al-Quran Karim NLP analysis using R
 
 Foobar is a Python library for dealing with word pluralization.
 
