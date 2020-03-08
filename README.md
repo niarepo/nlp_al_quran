@@ -1,13 +1,22 @@
-# Al-Quran Karim NLP analysis using R
+# Al-Quran Karim NLP using R
 
 Foobar is a Python library for dealing with word pluralization.
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use the R , please install below components
 
-```bash
-pip install foobar
+```r
+library(curl)
+library(rvest)
+library(dplyr)
+library(stringr)
+library(RSQLite)
+library(DataExplorer)
+library(tm)
+library(wordcloud)
+library(quanteda)
+
 ```
 
 ## Usage
