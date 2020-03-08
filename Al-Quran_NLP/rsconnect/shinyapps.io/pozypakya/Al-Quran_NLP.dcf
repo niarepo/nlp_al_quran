@@ -1,0 +1,12 @@
+name: Al-Quran_NLP
+title: Al-Quran_NLP
+username:
+account: pozypakya
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1917101
+bundleId: 2859545
+url: https://pozypakya.shinyapps.io/Al-Quran_NLP/
+when: 1583578684.13826
+asMultiple: FALSE
+asStatic: FALSE

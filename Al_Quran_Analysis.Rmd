@@ -1,0 +1,171 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+---
+output:
+  pdf_document: default
+---
+
+---
+title: "Al_Quran_Analysis"
+author: "Fauzy Che Yayah"
+date: "3/7/2020"
+output: pdf_document
+
+---
+
+```{r}
+
+setwd("~/Dropbox/NLP_Alquran")
+#https://www.citypopulation.de/en/malaysia/admin/
+library(curl)
+library(rvest)
+library(dplyr)
+library(stringr)
+library(RSQLite)
+library(DataExplorer)
+library(tm)
+library(wordcloud)
+library(stringi)
+
+conn <- dbConnect(RSQLite::SQLite(),  paste0(getwd(),"/q_nlp.db"))
+dbListTables(conn)
+surah <- dbReadTable(conn,"q_surah")
+summary(surah)
+DataExplorer::introduce(surah)
+DataExplorer::plot_density(surah)
+DataExplorer::plot_histogram(surah)
+DataExplorer::plot_qq(surah)
+DataExplorer::plot_scatterplot(surah,by = "Ayat")
+DataExplorer::plot_str(surah)
+
+q_content <- dbReadTable(conn,"q_content")
+DataExplorer::introduce(q_content)
+DataExplorer::plot_density(q_content)
+DataExplorer::plot_histogram(q_content)
+DataExplorer::plot_qq(q_content)
+DataExplorer::plot_boxplot(q_content,by = "juz", parallel = T )
+DataExplorer::plot_boxplot(q_content,by = "ayat", parallel = T )
+DataExplorer::plot_intro(q_content)
+
+df_summary_q <- q_content %>% group_by(juzuk=juz) %>% summarise(total_ayat = n())
+print(df_summary_q)
+DataExplorer::plot_boxplot(df_summary_q , by = "juzuk")
+
+```
+
+## R Markdown
+
+
+
+```{r}
+
+mining <- q_content %>% filter(juz == 6) 
+surah <- unique(mining$surah)
+
+df_review <- mining
+df_review <- as.data.frame(tolower(df_review$surah_desc))
+df_review <- as.data.frame(sapply(df_review,gsub,pattern="[[:digit:]]",replacement=" "))
+df_review <- as.data.frame(sapply(df_review,gsub,pattern="[[:punct:]]",replacement=" "))
+df_review <- as.data.frame(sapply(df_review,gsub,pattern="@\\w+",replacement=" ")) 
+df_review <- as.data.frame(sapply(df_review,gsub,pattern="^\\s+|\\s+$",replacement=" "))
+df_review <- as.data.frame(sapply(df_review,gsub,pattern="[ \t]{2,}",replacement=" "))
+df_review <- as.data.frame(sapply(df_review,gsub,pattern="[^[:alnum:]]",replacement=" "))
+names(df_review) = "review"
+match_corpus = Corpus(VectorSource(df_review$review))
+
+stopwords_malay = c("ini","dan","yang","buat","mcm","kat","apa","mmg",
+                    "dah","saya","lagi","dgn","ada","bin","aku","pastu","untuk","perlu")
+junk_words = c("nescaya", "sedang", "tiap", "antara", "ialah","bagi", "dalam", "oleh", "pada", "daripada", "kerana", "dapat", "adalah","kami","sesungguhnya","tidak","itu","kepada","dari","maka","dengan","akan","telah","atau","juga","pula","jika","serta","supaya","mereka","orang","kamu","lah")
+
+tdm = TermDocumentMatrix(
+  match_corpus,
+  control = list(
+    removePunctuation = TRUE,
+    stopwords = c(stopwords_malay,stopwords("english"),junk_words),
+    removeNumbers = TRUE, tolower = TRUE
+  )
+)
+
+#plot(tdm, terms = findFreqTerms(tdm, lowfreq = 2)[1:50], corThreshold = 0.5)
+tdm2 <- removeSparseTerms(tdm, sparse = 0.9)
+m <- as.matrix(tdm2)
+DataExplorer::plot_correlation(t(m))
+#DataExplorer::plot_prcomp(t(m))
+
+v <- sort(rowSums(m), decreasing = TRUE)
+#wordcloud
+word_freqs = sort(rowSums(m), decreasing=TRUE) 
+dm = data.frame(word=names(word_freqs), freq=word_freqs)
+dm$freq <- as.numeric(dm$freq)
+colors=rev(colorRampPalette(brewer.pal(9,"Dark2"))(32)[seq(8,32,6)])
+suppressWarnings(suppressMessages(wordcloud(dm$word, dm$freq , random.order=F, colors = colors, min.freq=1, max.words=100 ,  rot.per=0.55, scale = c(5,1))))
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r}
+
+dfUnit <- as.data.frame(head(dm,20))
+dfUnit$word <- rownames(dfUnit)
+rownames(dfUnit) <- c()
+dfUnit$word <- toupper(dfUnit$word)
+barplot(dm[1:20,]$freq, las = 2, names.arg = toupper(dm[1:20,]$word),
+        col = topo.colors(20), main = paste0("Top 20 Most Frequent Words - ", stri_unescape_unicode(surah) ),
+        ylab = "Keyword" , cex.axis=0.6, cex.names=0.6)
+
+top_words <- head(dm,20)
+
+for(i in 1:nrow(top_words))
+{
+  assoc <- as.data.frame(head(findAssocs(tdm, terms = toString(top_words$word[i]),corlimit = 0.00001),100000))
+  assoc$watchword <- rownames(assoc)
+  rownames(assoc) <- c()
+  names(assoc)[1] = "correlation"
+  assoc$watchword <- toupper(assoc$watchword)
+  max(assoc$correlation)
+  for(x in 1:nrow(assoc))
+  {
+    assoc$correlation[x] <- assoc$correlation[x] + runif(n=1, min = 0, max = (1-assoc$correlation[x]))/100
+  }
+  
+  assoc <- assoc[order(-assoc$correlation),]
+  barplot(assoc[1:20,]$correlation, las = 2, names.arg = assoc[1:20,]$watchword,
+          col = terrain.colors(20), main =paste("Rank No ",i,". Correlation of Keyword '",toupper(top_words$word[i]),"'.",sep = ""),
+          ylab = "Correlation" ,  cex.axis=0.6, cex.names=0.6)
+
+}
+
+
+#panderOptions('table.alignment.default',
+#     function(df) ifelse(sapply(df, is.numeric), 'right', 'left'))
+#pander(head(j,45))
+#print(head(j,45))
+tdm2 <- removeSparseTerms(tdm, sparse = 0.9)
+hc <- hclust(d = dist(tdm2, method = "canberra"), method = "complete")
+plot(hc)
+plot(hc, xlab="xlab", ylab="ylab", main="main", sub="")
+
+# reduced label size
+par(cex=0.4, mar=c(5, 8, 4, 0.1))
+plot(hc, xlab="Word List", ylab="Height", main="Happiness Survey Cluster Canberra Dendogram", sub="", axes=TRUE)
+par(cex=1)
+#title(xlab="xlab", ylab="ylab", main="Cluster Dendogram")
+#axis(2)
+
+
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+

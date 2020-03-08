@@ -1,0 +1,311 @@
+2020-03-09 00:06:37|   0.0|  0.0|INFORM|FME 2019.2.3.0 (20200131 - Build 19822 - linux-x64)
+2020-03-09 00:06:37|   0.0|  0.0|INFORM|FME_HOME is '/opt/fme-desktop-2019/'
+2020-03-09 00:06:37|   0.0|  0.0|INFORM|FME Database Edition (floating)
+2020-03-09 00:06:37|   0.0|  0.0|INFORM|Permanent License.
+2020-03-09 00:06:37|   0.0|  0.0|INFORM|Machine host name is: vanguard-zorin
+2020-03-09 00:06:37|   0.0|  0.0|INFORM|START - ProcessID: 12392, peak process memory usage: 16503 kB, current process memory usage: 16503 kB
+2020-03-09 00:06:37|   0.0|  0.0|INFORM|FME Configuration: Command line arguments are `/opt/fme-desktop-2019//bin/fme' `/home/vanguard/Dropbox/NLP_Alquran/wb-xlate-1583683595705_29391' `LOG_STANDARDOUT' `YES' `LogCountServerName' `{c5df7ecf-2975-4762-8fdd-474c01c00d0a}'
+2020-03-09 00:06:37|   0.0|  0.0|INFORM|FME Configuration: Connection Storage: '/home/vanguard//.Safe Software/FME/'
+2020-03-09 00:06:37|   0.0|  0.0|INFORM|Shared folders for formats are : /opt/fme-desktop-2019/datasources;/home/vanguard/.fme/Formats
+2020-03-09 00:06:37|   0.0|  0.0|INFORM|Shared folders for transformers are : /home/vanguard/.Safe Software/FME/Packages/19822-linux-x64/transformers;/opt/fme-desktop-2019/transformers;/home/vanguard/.Safe Software/FME/FME Store/Transformers
+2020-03-09 00:06:37|   0.0|  0.0|INFORM|Shared folders for coordinate systems are : /home/vanguard/.fme/CoordinateSystems
+2020-03-09 00:06:37|   0.0|  0.0|INFORM|Shared folders for coordinate system exceptions are : /home/vanguard/.fme/CoordinateSystemExceptions
+2020-03-09 00:06:37|   0.0|  0.0|INFORM|Shared folders for coordinate system grid overrides are : /home/vanguard/.fme/CoordinateSystemGridOverrides
+2020-03-09 00:06:37|   0.0|  0.0|INFORM|Shared folders for CS-MAP transformation exceptions are : /home/vanguard/.fme/CsmapTransformationExceptions
+2020-03-09 00:06:37|   0.0|  0.0|INFORM|Shared folders for transformer categories are : /home/vanguard/.fme/TransformerCategories
+2020-03-09 00:06:37|   0.0|  0.0|INFORM|FME Configuration: Reader Keyword is `MULTI_READER'
+2020-03-09 00:06:37|   0.0|  0.0|INFORM|FME Configuration: Writer Keyword is `MULTI_WRITER'
+2020-03-09 00:06:37|   0.0|  0.0|INFORM|FME Configuration: Writer Group Definition Keyword is `MULTI_WRITER_DEF'
+2020-03-09 00:06:37|   0.0|  0.0|INFORM|FME Configuration: Reader type is `MULTI_READER'
+2020-03-09 00:06:37|   0.0|  0.0|INFORM|FME Configuration: Writer type is `MULTI_WRITER'
+2020-03-09 00:06:37|   0.0|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2020-03-09 00:06:37|   0.0|  0.0|INFORM|FME Configuration: Current working folder is `/home/vanguard/Dropbox/NLP_Alquran'
+2020-03-09 00:06:37|   0.0|  0.0|INFORM|FME Configuration: Temporary folder is in the system location `/tmp'
+2020-03-09 00:06:37|   0.0|  0.0|INFORM|FME Configuration: FME_HOME is `/opt/fme-desktop-2019/'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|FME Configuration: FME_BASE is 'no'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|FME Configuration: FME_MF_DIR is '/home/vanguard/Dropbox/NLP_Alquran/'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|FME Configuration: FME_MF_NAME is 'quran_process.fmw'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|FME Configuration: FME_PRODUCT_NAME is 'FME(R) 2019.2.3.0'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|System Status: 158.16 GB of disk space available in the FME temporary folder (/tmp)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|System Status: 27.48 GB of virtual memory available
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|Operating System: Zorin OS 12.4
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|FME Platform: linux-x64
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|The memory allocator being used by FME is : `/usr/lib/libtcmalloc_minimal.so.4'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|Locale: en_US
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|FME Configuration: Process limits are 31.37 GB of physical memory and 27.48 GB of address space
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|FME Configuration: Start freeing memory when process usage exceeds 26.31 GB of memory or 26.89 GB of address space
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|FME Configuration: Stop freeing memory when process usage is below 19.73 GB of memory and 20.17 GB of address space
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|FME Configuration: Logging ungrouped output features
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|FME Configuration: Logging uncorrelated input features
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|FME Configuration: Dumping mapping file
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|FME Temporary Folder: /tmp
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 0: `FME_NAMES_UTF8' `NO'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 1: `FME_PYTHON_VERSION' `37'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 2: `GUI' `IGNORE' `SourceDataset_SPATIALITE_1,SPATIALITE_IN_FME_CONNECTION_GROUP_SPATIALITE_1,SPATIALITE_IN_NETWORK_AUTHENTICATION_SPATIALITE_1,DestDataset_SPATIALITE_2,SPATIALITE_OUT_FME_CONNECTION_GROUP_SPATIALITE_2,SPATIALITE_OUT_OVERWRITE_DATASET_SPATIALITE_2,SPATIALITE_OUT_DATASET_TEMPLATE_SPATIALITE_2,SPATIALITE_OUT_SPATIALITE_WRT_ADV_PARM_SPATIALITE_2,SPATIALITE_OUT_TRANSACTION_SIZE_SPATIALITE_2,DestDataset_SPATIALITE_3,SPATIALITE_OUT_FME_CONNECTION_GROUP_SPATIALITE_3,SPATIALITE_OUT_OVERWRITE_DATASET_SPATIALITE_3,SPATIALITE_OUT_DATASET_TEMPLATE_SPATIALITE_3,SPATIALITE_OUT_SPATIALITE_WRT_ADV_PARM_SPATIALITE_3,SPATIALITE_OUT_TRANSACTION_SIZE_SPATIALITE_3'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 3: `GUI' `MULTIFILE' `SourceDataset_SPATIALITE' `SpatiaLite_Database_Files(*.sqlite;*.db;*.sl3)|*.sqlite;*.db;*.sl3|SpatiaLite_Database_Files(*.sqlite)|*.sqlite|SpatiaLite_Database_Files(*.db)|*.db|SpatiaLite_Database_Files(*.sl3)|*.sl3|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_files(*)|*' `SpatiaLite' `Database'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 4: `GUI' `FILENAME' `DestDataset_SPATIALITE' `SpatiaLite_Database_Files(*.sqlite;*.db;*.sl3)|*.sqlite;*.db;*.sl3|SpatiaLite_Database_Files(*.sqlite)|*.sqlite|SpatiaLite_Database_Files(*.db)|*.db|SpatiaLite_Database_Files(*.sl3)|*.sl3|All_files(*)|*' `SpatiaLite' `Database'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 5: `GUI' `FILENAME' `DestDataset_SPATIALITE_4' `SpatiaLite_Database_Files(*.sqlite;*.db;*.sl3)|*.sqlite;*.db;*.sl3|SpatiaLite_Database_Files(*.sqlite)|*.sqlite|SpatiaLite_Database_Files(*.db)|*.db|SpatiaLite_Database_Files(*.sl3)|*.sl3|All_files(*)|*' `SpatiaLite' `Database'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 6: `GUI' `IGNORE' `OPTIONAL' `STRING' `FME_SECURITY_USER' `FME' `Server' `Security' `User:'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 7: `GUI' `IGNORE' `OPTIONAL' `DIRNAME_SRC' `FME_SHAREDRESOURCE_BACKUP' `FME' `Server' `Backup' `Directory:'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 8: `GUI' `IGNORE' `OPTIONAL' `STRING' `FME_SERVER_REQUEST_PARAMETERS' `FME' `Server' `Request' `Parameters:'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 9: `GUI' `IGNORE' `OPTIONAL' `DIRNAME_SRC' `FME_SHAREDRESOURCE_DASHBOARD' `FME' `Server' `Dashboards' `Directory:'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 10: `GUI' `IGNORE' `OPTIONAL' `STRING' `FME_SECURITY_ROLES' `FME' `Server' `Security' `Roles:'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 11: `GUI' `IGNORE' `OPTIONAL' `STRING' `FME_SERVER_REQUEST_URI' `FME' `Server' `Request' `URI:'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 12: `GUI' `IGNORE' `OPTIONAL' `DIRNAME_SRC' `FME_SHAREDRESOURCE_SYSTEM' `FME' `Server' `System' `Directory:'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 13: `GUI' `IGNORE' `OPTIONAL' `STRING' `FME_SERVER_PORT' `FME' `Server' `Port:'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 14: `GUI' `IGNORE' `OPTIONAL' `DIRNAME_SRC' `FME_SHAREDRESOURCE_LOG' `FME' `Server' `Logs' `Directory:'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 15: `GUI' `IGNORE' `OPTIONAL' `STRING' `FME_ENGINE' `FME' `Server' `Engine:'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 16: `GUI' `IGNORE' `OPTIONAL' `DIRNAME_SRC' `FME_SHAREDRESOURCE_TEMP' `FME' `Server' `Temporary' `Resource' `Directory:'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 17: `GUI' `IGNORE' `OPTIONAL' `STRING' `FME_SERVER_HOST' `FME' `Server' `Host:'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 18: `GUI' `IGNORE' `OPTIONAL' `DIRNAME_SRC' `FME_SHAREDRESOURCE_ENGINE' `FME' `Server' `Engine' `Directory:'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 19: `GUI' `IGNORE' `OPTIONAL' `STRING' `FME_SERVER_REQUEST_HEADERS' `FME' `Server' `Request' `Headers:'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 20: `GUI' `IGNORE' `OPTIONAL' `STRING' `FME_SERVER_REQUEST_METHOD' `FME' `Server' `Request' `Method:'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 21: `GUI' `IGNORE' `OPTIONAL' `STRING' `FME_SERVER_WEB_URL' `FME' `Server' `Web' `URL:'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 22: `GUI' `IGNORE' `OPTIONAL' `STRING' `FME_TOPIC' `FME' `Server' `Topic:'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 23: `GUI' `IGNORE' `OPTIONAL' `STRING' `FME_JOB_ID' `FME' `Server' `Job' `ID:'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 24: `GUI' `IGNORE' `OPTIONAL' `STRING' `FME_DATA_REPOSITORY' `FME' `Server' `Data' `Repository:'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 25: `GUI' `IGNORE' `OPTIONAL' `DIRNAME_SRC' `FME_SHAREDRESOURCE_DATA' `FME' `Server' `Data' `Directory:'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 26: `GUI' `IGNORE' `OPTIONAL' `FILENAME_EXISTING' `FME_TOPIC_MESSAGE' `All_Files(*)|*' `FME' `Server' `Topic' `Message:'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 27: `GUI' `IGNORE' `OPTIONAL' `DIRNAME_SRC' `FME_SERVER_DEST_DIR' `FME' `Server' `Destination' `Directory:'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 28: `READER_TYPE' `MULTI_READER'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 29: `MULTI_READER_TYPE{0}' `NULL'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 30: `MULTI_READER_FORMAT{0}' `SPATIALITE'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 31: `MULTI_READER_KEYWORD{0}' `SPATIALITE_1'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 32: `MULTI_READER_GEN_DIRECTIVES{0}' `READ_BOOLEANS_AS_YES_NO,YES,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,ENCODE_FEATURE_TYPE_AND_ATTR_NAMES,YES,TABLELIST,,EXPOSE_ATTRS_GROUP,,READ_ROW_ID,Yes,READ_NULLS,YES,_MERGE_SCHEMAS,YES,SPATIALITE_EXPOSE_FORMAT_ATTRS,'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 33: `WRITER_TYPE' `MULTI_WRITER'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 34: `MULTI_WRITER_DATASET_ORDER' `BY_ID'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 35: `MULTI_WRITER_FIRST_WRITER_ID' `0'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 36: `MULTI_WRITER_TYPE{0}' `SPATIALITE'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 37: `MULTI_WRITER_KEYWORD{0}' `SPATIALITE_2'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 38: `MULTI_WRITER_TYPE{1}' `SPATIALITE'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 39: `MULTI_WRITER_KEYWORD{1}' `SPATIALITE_3'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 40: `GUI' `MULTIFILE' `SourceDataset_SPATIALITE_1' `SpatiaLite_Database_Files(*.sqlite;*.db;*.sl3)|*.sqlite;*.db;*.sl3|SpatiaLite_Database_Files(*.sqlite)|*.sqlite|SpatiaLite_Database_Files(*.db)|*.db|SpatiaLite_Database_Files(*.sl3)|*.sl3|All_files(*)|*' `SpatiaLite' `Database'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 41: `GUI' `OPTIONAL' `DISCLOSUREGROUP' `SPATIALITE_IN_FME_CONNECTION_GROUP_SPATIALITE_1' `SPATIALITE_IN_NAMED_CONNECTION' `Database' `Connection'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 42: `SPATIALITE_1_READ_ROW_ID' `Yes'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 43: `SPATIALITE_1_EXPOSE_ATTRS_GROUP' `'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 44: `SPATIALITE_1_READ_BOOLEANS_AS_YES_NO' `YES'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 45: `SPATIALITE_1_READ_NULLS' `YES'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 46: `SPATIALITE_1_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS' `Yes'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 47: `SPATIALITE_1_ENCODE_FEATURE_TYPE_AND_ATTR_NAMES' `YES'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 48: `SPATIALITE_1_NETWORK_AUTHENTICATION' `'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 49: `GUI' `OPTIONAL' `AUTHENTICATOR' `SPATIALITE_IN_NETWORK_AUTHENTICATION_SPATIALITE_1' `CONTAINER%GROUP%CONTAINER_TITLE%Network Authentication%PROMPT_TYPE%NETWORK' `Network' `Authentication'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 50: `SPATIALITE_1_ATTRIBUTE_READING' `DEFLINE'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 51: `SPATIALITE_1_GENERATE_FME_BUILD_NUM' `19822'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 52: `SPATIALITE_1_DATASET' `/home/vanguard/Dropbox/NLP_Alquran/q_nlp.db'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 53: `GUI' `MULTIFILE' `DestDataset_SPATIALITE_2' `SpatiaLite_Database_Files(*.sqlite;*.db;*.sl3)|*.sqlite;*.db;*.sl3|SpatiaLite_Database_Files(*.sqlite)|*.sqlite|SpatiaLite_Database_Files(*.db)|*.db|SpatiaLite_Database_Files(*.sl3)|*.sl3|All_files(*)|*' `SpatiaLite' `Database'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 54: `GUI' `OPTIONAL' `DISCLOSUREGROUP' `SPATIALITE_OUT_FME_CONNECTION_GROUP_SPATIALITE_2' `SPATIALITE_OUT_NAMED_CONNECTION%SPATIALITE_OUT_OVERWRITE_DATASET_SPATIALITE_2%SPATIALITE_OUT_DATASET_TEMPLATE_SPATIALITE_2' `Database' `Connection'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 55: `SPATIALITE_2_OVERWRITE_DATASET' `No'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 56: `GUI' `OPTIONAL' `ACTIVECHECK' `SPATIALITE_OUT_OVERWRITE_DATASET_SPATIALITE_2' `Yes%No,SPATIALITE_OUT_DATASET_TEMPLATE_SPATIALITE_2' `Overwrite' `Existing' `Database:'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 57: `SPATIALITE_2_DATASET_TEMPLATE' `'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 58: `GUI' `OPTIONAL' `FILENAME_MUSTEXIST' `SPATIALITE_OUT_DATASET_TEMPLATE_SPATIALITE_2' `SpatiaLite_Database_Files(*.sqlite;*.db;*.sl3)|*.sqlite;*.db;*.sl3|SpatiaLite_Database_Files(*.sqlite)|*.sqlite|SpatiaLite_Database_Files(*.db)|*.db|SpatiaLite_Database_Files(*.sl3)|*.sl3|All_files(*)|*' `Template' `File:'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 59: `GUI' `LOOKUP' `SPATIALITE_OUT_DATASET_TEMPLATE_SPATIALITE_2' `<Unused>,'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 60: `SPATIALITE_2_GENERIC_GEOMETRY' `Yes'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 61: `SPATIALITE_2_COMPRESS_GEOMETRY' `No'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 62: `SPATIALITE_2_CREATE_SPATIAL_INDEX' `Yes'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 63: `GUI' `OPTIONAL' `DISCLOSUREGROUP' `SPATIALITE_OUT_SPATIALITE_WRT_ADV_PARM_SPATIALITE_2' `SPATIALITE_OUT_TRANSACTION_SIZE_SPATIALITE_2' `Advanced'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 64: `SPATIALITE_2_TRANSACTION_SIZE' `1000'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 65: `GUI' `INTEGER' `SPATIALITE_OUT_TRANSACTION_SIZE_SPATIALITE_2' `Features' `Per' `Transaction:'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 66: `SPATIALITE_2_DESTINATION_DATASETTYPE_VALIDATION' `Yes'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 67: `SPATIALITE_2_COORDINATE_SYSTEM_GRANULARITY' `FEATURE_TYPE'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 68: `SPATIALITE_2_ENCODE_FEATURE_TYPE_AND_ATTR_NAMES' `YES'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 69: `SPATIALITE_2_WRITE_NULLS' `YES'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 70: `SPATIALITE_2_GENERATE_FME_BUILD_NUM' `19822'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 71: `SPATIALITE_2_DATASET' `/home/vanguard/Dropbox/NLP_Alquran/q_nlp.db'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 72: `GUI' `MULTIFILE' `DestDataset_SPATIALITE_3' `SpatiaLite_Database_Files(*.sqlite;*.db;*.sl3)|*.sqlite;*.db;*.sl3|SpatiaLite_Database_Files(*.sqlite)|*.sqlite|SpatiaLite_Database_Files(*.db)|*.db|SpatiaLite_Database_Files(*.sl3)|*.sl3|All_files(*)|*' `SpatiaLite' `Database'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 73: `GUI' `OPTIONAL' `DISCLOSUREGROUP' `SPATIALITE_OUT_FME_CONNECTION_GROUP_SPATIALITE_3' `SPATIALITE_OUT_NAMED_CONNECTION%SPATIALITE_OUT_OVERWRITE_DATASET_SPATIALITE_3%SPATIALITE_OUT_DATASET_TEMPLATE_SPATIALITE_3' `Database' `Connection'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 74: `SPATIALITE_3_OVERWRITE_DATASET' `No'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 75: `GUI' `OPTIONAL' `ACTIVECHECK' `SPATIALITE_OUT_OVERWRITE_DATASET_SPATIALITE_3' `Yes%No,SPATIALITE_OUT_DATASET_TEMPLATE_SPATIALITE_3' `Overwrite' `Existing' `Database:'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 76: `SPATIALITE_3_DATASET_TEMPLATE' `'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 77: `GUI' `OPTIONAL' `FILENAME_MUSTEXIST' `SPATIALITE_OUT_DATASET_TEMPLATE_SPATIALITE_3' `SpatiaLite_Database_Files(*.sqlite;*.db;*.sl3)|*.sqlite;*.db;*.sl3|SpatiaLite_Database_Files(*.sqlite)|*.sqlite|SpatiaLite_Database_Files(*.db)|*.db|SpatiaLite_Database_Files(*.sl3)|*.sl3|All_files(*)|*' `Template' `File:'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 78: `GUI' `LOOKUP' `SPATIALITE_OUT_DATASET_TEMPLATE_SPATIALITE_3' `<Unused>,'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 79: `SPATIALITE_3_GENERIC_GEOMETRY' `Yes'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 80: `SPATIALITE_3_COMPRESS_GEOMETRY' `No'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 81: `SPATIALITE_3_CREATE_SPATIAL_INDEX' `Yes'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 82: `GUI' `OPTIONAL' `DISCLOSUREGROUP' `SPATIALITE_OUT_SPATIALITE_WRT_ADV_PARM_SPATIALITE_3' `SPATIALITE_OUT_TRANSACTION_SIZE_SPATIALITE_3' `Advanced'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 83: `SPATIALITE_3_TRANSACTION_SIZE' `1000'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 84: `GUI' `INTEGER' `SPATIALITE_OUT_TRANSACTION_SIZE_SPATIALITE_3' `Features' `Per' `Transaction:'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 85: `SPATIALITE_3_DESTINATION_DATASETTYPE_VALIDATION' `Yes'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 86: `SPATIALITE_3_COORDINATE_SYSTEM_GRANULARITY' `FEATURE_TYPE'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 87: `SPATIALITE_3_ENCODE_FEATURE_TYPE_AND_ATTR_NAMES' `YES'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 88: `SPATIALITE_3_WRITE_NULLS' `YES'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 89: `SPATIALITE_3_GENERATE_FME_BUILD_NUM' `19822'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 90: `SPATIALITE_3_DATASET' `/home/vanguard/Dropbox/NLP_Alquran/q_nlp.db'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 91: `LOG_END_BANNER'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 92: `LOG_END_BANNER' `Feature' `caches' `have' `been' `recorded' `at' `every' `stage' `of' `the' `translation.'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 93: `LOG_END_BANNER' `To' `inspect' `the' `recorded' `features,'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 94: `LOG_END_BANNER' `click' `the' `feature' `cache' `icons' `next' `to' `the' `ports.'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 95: `LOG_END_BANNER'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 96: `LOG_FILENAME' `/home/vanguard/Dropbox/NLP_Alquran/quran_process.log'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 97: `LOG_APPEND' `NO'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 98: `FME_DEBUG' `MAPPING_FILE' `BADNEWS' `FME_STACK_TRACE' `UNGROUPED' `UNCORRELATED' `DUMP_SCHEMA' `XSD_VERBOSE' `HTTP_DEBUG' `FTP_DEBUG' `FME_DEBUG' `STASH'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 99: `LOG_FILTER_MASK' `-1'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 100: `LOG_MAX_FEATURES' `200'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 101: `LOG_MAX_RECORDED_FEATURES' `200'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 102: `FME_REPROJECTION_ENGINE' `FME'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 103: `FME_IMPLICIT_CSMAP_REPROJECTION_MODE' `Auto'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 104: `FME_GEOMETRY_HANDLING' `Enhanced'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 105: `FME_STROKE_MAX_DEVIATION' `0'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 106: `SPATIALITE_1_READER_META_ATTRIBUTES' `fme_feature_type'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 107: `MULTI_READER_CONTINUE_ON_READER_FAILURE' `No'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 108: `FACTORY_DEF' `*' `RoutingFactory' `FACTORY_NAME' `Router and Unexpected Input Remover' `COMMAND_PARM_EVALUATION' `SINGLE_PASS' `MULTI_READER_KEYWORD' `SPATIALITE_1' `INPUT' `FEATURE_TYPE' `*' `ROUTE' `SPATIALITE' `SPATIALITE_1::q_content' `multi_reader_keyword,SPATIALITE_1' `TO' `FME_GENERIC' `::q_content' `ALIAS_GEOMETRY' `ROUTE' `SPATIALITE' `SPATIALITE_1::q_surah' `multi_reader_keyword,SPATIALITE_1' `TO' `FME_GENERIC' `::q_surah' `ALIAS_GEOMETRY' `ROUTE' `SPATIALITE' `SPATIALITE_1::q_juz' `multi_reader_keyword,SPATIALITE_1' `TO' `FME_GENERIC' `::q_juz' `ALIAS_GEOMETRY' `MERGE_INPUT' `Yes' `OUTPUT' `ROUTED' `FEATURE_TYPE' `*' `OUTPUT' `NOT_ROUTED' `FEATURE_TYPE' `*' `@LogCount(UnexpectedInput @FeatureType())' `@FeatureType(__TO_REMOVE__)'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 109: `FACTORY_DEF' `*' `TeeFactory' `FACTORY_NAME' `Unexpected Input Remover Nuker' `INPUT' `FEATURE_TYPE' `__TO_REMOVE__'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 110: `SPATIALITE_1_MERGE_DEF' `SPATIALITE_1::q_content' `EXACT' `q_content' `DEFLINE' `spatialite_type,wkb_none,fme_attribute_reading,defined,juz,integer,ayat,integer,surah,string<openparen>255<closeparen>,surah_desc,string<openparen>255<closeparen>'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 111: `SPATIALITE_1_MERGE_DEF' `SPATIALITE_1::q_surah' `EXACT' `q_surah' `DEFLINE' `spatialite_type,wkb_none,fme_attribute_reading,defined,Surah,integer,Nama_Surah,string<openparen>255<closeparen>,Ayat,integer,Maksud,string<openparen>255<closeparen>'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 112: `SPATIALITE_1_MERGE_DEF' `SPATIALITE_1::q_juz' `EXACT' `q_juz' `DEFLINE' `spatialite_type,wkb_none,fme_attribute_reading,defined,Juz,integer,Nama.Surah,string<openparen>255<closeparen>,Maksud,string<openparen>255<closeparen>'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 113: `FACTORY_DEF' `*' `TeeFactory' `FACTORY_NAME' `q_content (SPATIALITE_1) Splitter' `INPUT' `FEATURE_TYPE' `q_content' `@LogCount(PORT -1 2147549186)'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 114: `FACTORY_DEF' `*' `TeeFactory' `FACTORY_NAME' `q_juz (SPATIALITE_1) Splitter' `INPUT' `FEATURE_TYPE' `q_juz' `@LogCount(PORT -1 2147549187)'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 115: `FACTORY_DEF' `*' `TeeFactory' `FACTORY_NAME' `q_surah (SPATIALITE_1) Splitter' `INPUT' `FEATURE_TYPE' `q_surah' `@LogCount(PORT -1 2147549188)'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 116: `FACTORY_DEF' `*' `RecorderFactory' `FACTORY_NAME' `Sorter_SORTED_-1_26_Player' `FEATURE_FILE' `/tmp/wb-cache--T29391/Main_Sorter -1 29 fo 0 SORTED  0  c0f342e4c0771fbac4e52c8a217f0784bec08b96.ffs' `MODE' `PLAYBACK' `OUTPUT' `RECORDED' `FEATURE_TYPE' `*' `@LogCount(LINK -1 26)' `@FeatureType(Sorter_SORTED)'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 117: `FACTORY_DEF' `*' `RoutingFactory' `FACTORY_NAME' `Destination Feature Type Routing Correlator' `COMMAND_PARM_EVALUATION' `SINGLE_PASS' `INPUT' `FEATURE_TYPE' `*' `ROUTE' `FME_GENERIC' `Sorter_SORTED' `TO' `SPATIALITE' `__GO_TO_FINAL_OUTPUT_ROUTER__' `<at>CopyAttributes<openparen>ENCODED<comma>total<comma>TOTAL<closeparen>,multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>q_juz_summary<closeparen>' `GEOMETRY' `FEATURE_TYPE_ATTRIBUTE' `__wb_out_feat_type__' `OUTPUT' `ROUTED' `FEATURE_TYPE' `*' `OUTPUT' `NOT_ROUTED' `FEATURE_TYPE' `__nuke_me__' `@Tcl2(FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn)'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 118: `FACTORY_DEF' `*' `TeeFactory' `FACTORY_NAME' `Final Output Nuker' `INPUT' `FEATURE_TYPE' `__nuke_me__'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 119: `SPATIALITE_3_DEF' `q_juz_summary' `spatialite_type' `wkb_geometry' `spatialite_overwrite_tables' `deprecated' `spatialite_create_spatial_index' `No' `spatialite_compress_geometry' `No' `fme_feature_operation' `INSERT' `fme_table_handling' `DROP_CREATE' `fme_selection_method' `MATCH_ID' `surah' `string(255)' `ayat' `string(10000)' `surah_desc' `string(10000)' `juz' `integer' `total' `integer' `cluster' `integer'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 120: `FME_USER_PYTHON' `No'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 121: `LOG_STANDARDOUT' `YES'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 122: `LogCountServerName' `{c5df7ecf-2975-4762-8fdd-474c01c00d0a}'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 123: `LOG_ENCODING' `UTF-8'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Line 124: `FME_HOME' `/opt/fme-desktop-2019/'
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_2_WRITE_NULLS'               occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `MULTI_WRITER_DATASET_ORDER'             occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `MULTI_READER_TYPE{0}'                   occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_3_GENERIC_GEOMETRY'          occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_2_COMPRESS_GEOMETRY'         occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_3_ENCODE_FEATURE_TYPE_AND_ATTR_NAMES' occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `FME_USER_PYTHON'                        occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_3_DEF'                       occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_3_CREATE_SPATIAL_INDEX'      occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_3_DATASET'                   occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `LogCountServerName'                     occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `FME_PYTHON_VERSION'                     occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_3_COORDINATE_SYSTEM_GRANULARITY' occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `FME_IMPLICIT_CSMAP_REPROJECTION_MODE'   occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `LOG_END_BANNER'                         occurs 5 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_3_DESTINATION_DATASETTYPE_VALIDATION' occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_3_GENERATE_FME_BUILD_NUM'    occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `LOG_STANDARDOUT'                        occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `LOG_ENCODING'                           occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_3_OVERWRITE_DATASET'         occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `MULTI_READER_FORMAT{0}'                 occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `MULTI_WRITER_TYPE{1}'                   occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `FACTORY_DEF'                            occurs 8 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_1_DATASET'                   occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_2_CREATE_SPATIAL_INDEX'      occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_2_GENERIC_GEOMETRY'          occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_3_DATASET_TEMPLATE'          occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_1_READ_ROW_ID'               occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `READER_TYPE'                            occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_2_ENCODE_FEATURE_TYPE_AND_ATTR_NAMES' occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `FME_GEOMETRY_HANDLING'                  occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_1_MERGE_DEF'                 occurs 3 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_1_ENCODE_FEATURE_TYPE_AND_ATTR_NAMES' occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `WRITER_TYPE'                            occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `GUI'                                    occurs 43 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_2_COORDINATE_SYSTEM_GRANULARITY' occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_2_TRANSACTION_SIZE'          occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_2_GENERATE_FME_BUILD_NUM'    occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `MULTI_WRITER_TYPE{0}'                   occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `MULTI_READER_GEN_DIRECTIVES{0}'         occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_1_NETWORK_AUTHENTICATION'    occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `LOG_FILENAME'                           occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_3_COMPRESS_GEOMETRY'         occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `FME_DEBUG'                              occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `LOG_APPEND'                             occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `LOG_FILTER_MASK'                        occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `FME_REPROJECTION_ENGINE'                occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `MULTI_READER_KEYWORD{0}'                occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_3_TRANSACTION_SIZE'          occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `MULTI_WRITER_FIRST_WRITER_ID'           occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `LOG_MAX_FEATURES'                       occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_1_READER_META_ATTRIBUTES'    occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `FME_HOME'                               occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_2_DESTINATION_DATASETTYPE_VALIDATION' occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_1_ATTRIBUTE_READING'         occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_1_GENERATE_FME_BUILD_NUM'    occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_1_EXPOSE_ATTRS_GROUP'        occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_1_READ_NULLS'                occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_1_READ_BOOLEANS_AS_YES_NO'   occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_2_DATASET'                   occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `MULTI_WRITER_KEYWORD{1}'                occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_1_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS' occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `MULTI_WRITER_KEYWORD{0}'                occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `FME_STROKE_MAX_DEVIATION'               occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_2_DATASET_TEMPLATE'          occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `FME_NAMES_UTF8'                         occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `MULTI_READER_CONTINUE_ON_READER_FAILURE' occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `LOG_MAX_RECORDED_FEATURES'              occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_2_OVERWRITE_DATASET'         occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|mapping file Keyword: `SPATIALITE_3_WRITE_NULLS'               occurs 1 time(s)
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|Creating writer for format: 
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|Creating reader for format: 
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|MULTI_READER(MULTI_READER): Will fail with first member reader failure
+2020-03-09 00:06:37|   0.1|  0.0|WARN  |No readers were found to be part of the Multi-Reader, so no data will be read.
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|Using Multi Reader with keyword `MULTI_READER' to read multiple datasets
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|Using MultiWriter with keyword `MULTI_WRITER' to output data (ID_ATTRIBUTE is `multi_writer_id')
+2020-03-09 00:06:37|   0.1|  0.0|INFORM|Writer output will be ordered by value of multi_writer_id
+2020-03-09 00:06:38|   0.7|  0.6|INFORM|LD_LIBRARY_PATH is '/opt/fme-desktop-2019//fmecore:/opt/fme-desktop-2019/fmecore'
+2020-03-09 00:06:38|   0.7|  0.0|INFORM|Loaded module 'LogCount_func' from file '/opt/fme-desktop-2019/plugins/logcount_func.so'
+2020-03-09 00:06:38|   0.7|  0.0|INFORM|FME API version of module 'LogCount_func' matches current internal version (3.8 20190820)
+2020-03-09 00:06:38|   0.7|  0.0|INFORM|Emptying factory pipeline
+2020-03-09 00:06:38|   0.7|  0.0|STATS |Router and Unexpected Input Remover (RoutingFactory): Tested 0 input feature(s), wrote 0 output feature(s): 0 matched merge filters, 0 were routed to output, 0 could not be routed.
+2020-03-09 00:06:38|   0.7|  0.0|STATS |Unexpected Input Remover Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2020-03-09 00:06:38|   0.7|  0.0|STATS |q_content (SPATIALITE_1) Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2020-03-09 00:06:38|   0.7|  0.0|STATS |q_juz (SPATIALITE_1) Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2020-03-09 00:06:38|   0.7|  0.0|STATS |q_surah (SPATIALITE_1) Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2020-03-09 00:06:38|   0.7|  0.0|STATS |Restoring 114 feature(s) from FME feature store file `/tmp/wb-cache--T29391/Main_Sorter -1 29 fo 0 SORTED  0  c0f342e4c0771fbac4e52c8a217f0784bec08b96.ffs'
+2020-03-09 00:06:38|   0.8|  0.1|INFORM|Sorter_SORTED_-1_26_Player (RecorderFactory): Played back 114 feature(s) from file `/tmp/wb-cache--T29391/Main_Sorter -1 29 fo 0 SORTED  0  c0f342e4c0771fbac4e52c8a217f0784bec08b96.ffs'
+2020-03-09 00:06:38|   0.8|  0.0|STATS |Destination Feature Type Routing Correlator (RoutingFactory): Tested 114 input feature(s), wrote 114 output feature(s): 0 matched merge filters, 114 were routed to output, 0 could not be routed.
+2020-03-09 00:06:38|   0.8|  0.0|STATS |Final Output Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2020-03-09 00:06:38|   0.8|  0.0|INFORM|MULTI_WRITER: multi_writer_id `1': Started outputting features
+2020-03-09 00:06:38|   0.8|  0.0|INFORM|Creating writer for format: SpatiaLite
+2020-03-09 00:06:38|   0.8|  0.0|INFORM|Trying to find a DYNAMIC plugin for writer named `SPATIALITE'
+2020-03-09 00:06:38|   0.9|  0.0|INFORM|Loaded module 'SPATIALITE' from file '/opt/fme-desktop-2019/plugins/gdal/gdal.so'
+2020-03-09 00:06:38|   0.9|  0.0|INFORM|FME API version of module 'SPATIALITE' matches current internal version (3.8 20190820)
+2020-03-09 00:06:38|   0.9|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2020-03-09 00:06:38|   0.9|  0.0|INFORM|FME API version of module 'SPATIALITE' matches current internal version (3.8 20190820)
+2020-03-09 00:06:38|   0.9|  0.0|INFORM|Writer `SPATIALITE_3' of type `SPATIALITE' using group definition keyword `SPATIALITE_3_DEF'
+2020-03-09 00:06:38|   0.9|  0.0|INFORM|FME API version of module 'SPATIALITE' matches current internal version (3.8 20190820)
+2020-03-09 00:06:38|   0.9|  0.0|INFORM|SPATIALITE writer: Directive '_OVERWRITE_DATASET' has value 'No'
+2020-03-09 00:06:38|   0.9|  0.0|INFORM|SPATIALITE writer: Directive '_CREATE_SPATIAL_INDEX' has value 'Yes'
+2020-03-09 00:06:38|   0.9|  0.0|INFORM|SPATIALITE writer: Directive '_COMPRESS_GEOMETRY' has value 'No'
+2020-03-09 00:06:38|   0.9|  0.0|INFORM|SPATIALITE writer: Directive '_TRANSACTION_SIZE' has value '1000'
+2020-03-09 00:06:38|   0.9|  0.0|INFORM|SPATIALITE writer: Feature Type Parameter 'spatialite_create_spatial_index' has value 'No' for feature type 'q_juz_summary'
+2020-03-09 00:06:38|   0.9|  0.0|INFORM|SPATIALITE writer: Feature Type Parameter 'spatialite_compress_geometry' has value 'No' for feature type 'q_juz_summary'
+2020-03-09 00:06:38|   0.9|  0.0|INFORM|SPATIALITE Writer: Feature Type Parameter 'fme_table_handling' has value 'DROP_CREATE' for feature type 'q_juz_summary'
+2020-03-09 00:06:38|   0.9|  0.0|INFORM|SPATIALITE Writer: Feature Type Parameter 'fme_feature_operation' has value 'Insert' for feature type 'q_juz_summary'
+2020-03-09 00:06:38|   0.9|  0.0|INFORM|SPATIALITE writer: Opening file '/home/vanguard/Dropbox/NLP_Alquran/q_nlp.db'
+2020-03-09 00:06:38|   0.9|  0.0|INFORM|SPATIALITE writer: Deleting feature type 'q_juz_summary'
+2020-03-09 00:06:38|   0.9|  0.0|INFORM|SPATIALITE writer: Creating layer 'q_juz_summary' with geometry type 'wkb_unknown'
+2020-03-09 00:06:38|   0.9|  0.0|INFORM|SPATIALITE writer: Committing transaction of 114 features to feature types 'q_juz_summary'...
+2020-03-09 00:06:38|   0.9|  0.0|INFORM|=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2020-03-09 00:06:38|   0.9|  0.0|INFORM|Feature output statistics for `SPATIALITE' writer using keyword `SPATIALITE_3':
+2020-03-09 00:06:38|   0.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2020-03-09 00:06:38|   0.9|  0.0|STATS |                               Features Written
+2020-03-09 00:06:38|   0.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2020-03-09 00:06:38|   0.9|  0.0|STATS |q_juz_summary                                                              114
+2020-03-09 00:06:38|   0.9|  0.0|STATS |==============================================================================
+2020-03-09 00:06:38|   0.9|  0.0|STATS |Total Features Written                                                     114
+2020-03-09 00:06:38|   0.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2020-03-09 00:06:38|   0.9|  0.0|INFORM|MULTI_WRITER: multi_writer_id `1': done writing 114 feature(s) 
+2020-03-09 00:06:38|   0.9|  0.0|INFORM|^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020-03-09 00:06:38|   0.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2020-03-09 00:06:38|   0.9|  0.0|STATS |                            Features Read Summary
+2020-03-09 00:06:38|   0.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2020-03-09 00:06:38|   0.9|  0.0|STATS |==============================================================================
+2020-03-09 00:06:38|   0.9|  0.0|STATS |Total Features Read                                                          0
+2020-03-09 00:06:38|   0.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2020-03-09 00:06:38|   0.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2020-03-09 00:06:38|   0.9|  0.0|STATS |                           Features Written Summary
+2020-03-09 00:06:38|   0.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2020-03-09 00:06:38|   0.9|  0.0|STATS |q_juz_summary                                                              114
+2020-03-09 00:06:38|   0.9|  0.0|STATS |==============================================================================
+2020-03-09 00:06:38|   0.9|  0.0|STATS |Total Features Written                                                     114
+2020-03-09 00:06:38|   0.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2020-03-09 00:06:38|   0.9|  0.0|WARN  |-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
+2020-03-09 00:06:38|   0.9|  0.0|WARN  |-~                                                                             ~-
+2020-03-09 00:06:38|   0.9|  0.0|WARN  |-~    Feature caches have been recorded at every stage of the translation.     ~-
+2020-03-09 00:06:38|   0.9|  0.0|WARN  |-~                      To inspect the recorded features,                      ~-
+2020-03-09 00:06:38|   0.9|  0.0|WARN  |-~              click the feature cache icons next to the ports.               ~-
+2020-03-09 00:06:38|   0.9|  0.0|WARN  |-~                                                                             ~-
+2020-03-09 00:06:38|   0.9|  0.0|WARN  |-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
+2020-03-09 00:06:38|   0.9|  0.0|INFORM|Translation was SUCCESSFUL with 8 warning(s) (114 feature(s) output)
+2020-03-09 00:06:38|   0.9|  0.0|INFORM|FME Session Duration: 1.0 seconds. (CPU: 0.5s user, 0.3s system)
+2020-03-09 00:06:38|   0.9|  0.0|INFORM|END - ProcessID: 12392, peak process memory usage: 26314 kB, current process memory usage: 21301 kB

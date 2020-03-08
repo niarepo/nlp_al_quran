@@ -1,0 +1,670 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={Al\_Quran\_Analysis},
+            pdfauthor={Fauzy Che Yayah},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\providecommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{Al\_Quran\_Analysis}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+    \author{Fauzy Che Yayah}
+    \preauthor{\centering\large\emph}
+  \postauthor{\par}
+      \predate{\centering\large\emph}
+  \postdate{\par}
+    \date{3/7/2020}
+
+
+\begin{document}
+\maketitle
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{setwd}\NormalTok{(}\StringTok{"~/Dropbox/NLP_Alquran"}\NormalTok{)}
+\CommentTok{#https://www.citypopulation.de/en/malaysia/admin/}
+\KeywordTok{library}\NormalTok{(curl)}
+\KeywordTok{library}\NormalTok{(rvest)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Loading required package: xml2
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(dplyr)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Attaching package: 'dplyr'
+\end{verbatim}
+
+\begin{verbatim}
+## The following objects are masked from 'package:stats':
+## 
+##     filter, lag
+\end{verbatim}
+
+\begin{verbatim}
+## The following objects are masked from 'package:base':
+## 
+##     intersect, setdiff, setequal, union
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(stringr)}
+\KeywordTok{library}\NormalTok{(RSQLite)}
+\KeywordTok{library}\NormalTok{(DataExplorer)}
+\KeywordTok{library}\NormalTok{(tm)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Loading required package: NLP
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(wordcloud)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Loading required package: RColorBrewer
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(stringi)}
+
+\NormalTok{conn <-}\StringTok{ }\KeywordTok{dbConnect}\NormalTok{(RSQLite}\OperatorTok{::}\KeywordTok{SQLite}\NormalTok{(),  }\KeywordTok{paste0}\NormalTok{(}\KeywordTok{getwd}\NormalTok{(),}\StringTok{"/q_nlp.db"}\NormalTok{))}
+\KeywordTok{dbListTables}\NormalTok{(conn)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "q_content" "q_juz"     "q_surah"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{surah <-}\StringTok{ }\KeywordTok{dbReadTable}\NormalTok{(conn,}\StringTok{"q_surah"}\NormalTok{)}
+\KeywordTok{summary}\NormalTok{(surah)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##      Surah         Nama_Surah             Ayat           Maksud         
+##  Min.   :  1.00   Length:114         Min.   :  3.00   Length:114        
+##  1st Qu.: 29.25   Class :character   1st Qu.: 15.50   Class :character  
+##  Median : 57.50   Mode  :character   Median : 39.00   Mode  :character  
+##  Mean   : 57.50                      Mean   : 54.70                     
+##  3rd Qu.: 85.75                      3rd Qu.: 77.75                     
+##  Max.   :114.00                      Max.   :286.00
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{DataExplorer}\OperatorTok{::}\KeywordTok{introduce}\NormalTok{(surah)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##   rows columns discrete_columns continuous_columns all_missing_columns
+## 1  114       4                1                  2                   1
+##   total_missing_values complete_rows total_observations memory_usage
+## 1                  114             0                456        10408
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{DataExplorer}\OperatorTok{::}\KeywordTok{plot_density}\NormalTok{(surah)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-1-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{DataExplorer}\OperatorTok{::}\KeywordTok{plot_histogram}\NormalTok{(surah)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-1-2.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{DataExplorer}\OperatorTok{::}\KeywordTok{plot_qq}\NormalTok{(surah)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-1-3.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{DataExplorer}\OperatorTok{::}\KeywordTok{plot_scatterplot}\NormalTok{(surah,}\DataTypeTok{by =} \StringTok{"Ayat"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-1-4.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{DataExplorer}\OperatorTok{::}\KeywordTok{plot_str}\NormalTok{(surah)}
+
+\NormalTok{q_content <-}\StringTok{ }\KeywordTok{dbReadTable}\NormalTok{(conn,}\StringTok{"q_content"}\NormalTok{)}
+\NormalTok{DataExplorer}\OperatorTok{::}\KeywordTok{introduce}\NormalTok{(q_content)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##   rows columns discrete_columns continuous_columns all_missing_columns
+## 1 6236       4                2                  2                   0
+##   total_missing_values complete_rows total_observations memory_usage
+## 1                    0          6236              24944      1921920
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{DataExplorer}\OperatorTok{::}\KeywordTok{plot_density}\NormalTok{(q_content)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-1-5.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{DataExplorer}\OperatorTok{::}\KeywordTok{plot_histogram}\NormalTok{(q_content)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-1-6.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{DataExplorer}\OperatorTok{::}\KeywordTok{plot_qq}\NormalTok{(q_content)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-1-7.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{DataExplorer}\OperatorTok{::}\KeywordTok{plot_boxplot}\NormalTok{(q_content,}\DataTypeTok{by =} \StringTok{"juz"}\NormalTok{, }\DataTypeTok{parallel =}\NormalTok{ T )}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-1-8.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{DataExplorer}\OperatorTok{::}\KeywordTok{plot_boxplot}\NormalTok{(q_content,}\DataTypeTok{by =} \StringTok{"ayat"}\NormalTok{, }\DataTypeTok{parallel =}\NormalTok{ T )}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-1-9.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{DataExplorer}\OperatorTok{::}\KeywordTok{plot_intro}\NormalTok{(q_content)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-1-10.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{df_summary_q <-}\StringTok{ }\NormalTok{q_content }\OperatorTok{%>%}\StringTok{ }\KeywordTok{group_by}\NormalTok{(}\DataTypeTok{juzuk=}\NormalTok{juz) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{summarise}\NormalTok{(}\DataTypeTok{total_ayat =} \KeywordTok{n}\NormalTok{())}
+\KeywordTok{print}\NormalTok{(df_summary_q)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 114 x 2
+##    juzuk total_ayat
+##    <int>      <int>
+##  1     1          7
+##  2     2        286
+##  3     3        200
+##  4     4        176
+##  5     5        120
+##  6     6        165
+##  7     7        206
+##  8     8         75
+##  9     9        129
+## 10    10        109
+## # ... with 104 more rows
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{DataExplorer}\OperatorTok{::}\KeywordTok{plot_boxplot}\NormalTok{(df_summary_q , }\DataTypeTok{by =} \StringTok{"juzuk"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-1-11.pdf}
+
+\hypertarget{r-markdown}{%
+\subsection{R Markdown}\label{r-markdown}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{mining <-}\StringTok{ }\NormalTok{q_content }\OperatorTok{%>%}\StringTok{ }\KeywordTok{filter}\NormalTok{(juz }\OperatorTok{==}\StringTok{ }\DecValTok{6}\NormalTok{) }
+\NormalTok{surah <-}\StringTok{ }\KeywordTok{unique}\NormalTok{(mining}\OperatorTok{$}\NormalTok{surah)}
+
+\NormalTok{df_review <-}\StringTok{ }\NormalTok{mining}
+\NormalTok{df_review <-}\StringTok{ }\KeywordTok{as.data.frame}\NormalTok{(}\KeywordTok{tolower}\NormalTok{(df_review}\OperatorTok{$}\NormalTok{surah_desc))}
+\NormalTok{df_review <-}\StringTok{ }\KeywordTok{as.data.frame}\NormalTok{(}\KeywordTok{sapply}\NormalTok{(df_review,gsub,}\DataTypeTok{pattern=}\StringTok{"[[:digit:]]"}\NormalTok{,}\DataTypeTok{replacement=}\StringTok{" "}\NormalTok{))}
+\NormalTok{df_review <-}\StringTok{ }\KeywordTok{as.data.frame}\NormalTok{(}\KeywordTok{sapply}\NormalTok{(df_review,gsub,}\DataTypeTok{pattern=}\StringTok{"[[:punct:]]"}\NormalTok{,}\DataTypeTok{replacement=}\StringTok{" "}\NormalTok{))}
+\NormalTok{df_review <-}\StringTok{ }\KeywordTok{as.data.frame}\NormalTok{(}\KeywordTok{sapply}\NormalTok{(df_review,gsub,}\DataTypeTok{pattern=}\StringTok{"@}\CharTok{\textbackslash{}\textbackslash{}}\StringTok{w+"}\NormalTok{,}\DataTypeTok{replacement=}\StringTok{" "}\NormalTok{)) }
+\NormalTok{df_review <-}\StringTok{ }\KeywordTok{as.data.frame}\NormalTok{(}\KeywordTok{sapply}\NormalTok{(df_review,gsub,}\DataTypeTok{pattern=}\StringTok{"^}\CharTok{\textbackslash{}\textbackslash{}}\StringTok{s+|}\CharTok{\textbackslash{}\textbackslash{}}\StringTok{s+$"}\NormalTok{,}\DataTypeTok{replacement=}\StringTok{" "}\NormalTok{))}
+\NormalTok{df_review <-}\StringTok{ }\KeywordTok{as.data.frame}\NormalTok{(}\KeywordTok{sapply}\NormalTok{(df_review,gsub,}\DataTypeTok{pattern=}\StringTok{"[ }\CharTok{\textbackslash{}t}\StringTok{]\{2,\}"}\NormalTok{,}\DataTypeTok{replacement=}\StringTok{" "}\NormalTok{))}
+\NormalTok{df_review <-}\StringTok{ }\KeywordTok{as.data.frame}\NormalTok{(}\KeywordTok{sapply}\NormalTok{(df_review,gsub,}\DataTypeTok{pattern=}\StringTok{"[^[:alnum:]]"}\NormalTok{,}\DataTypeTok{replacement=}\StringTok{" "}\NormalTok{))}
+\KeywordTok{names}\NormalTok{(df_review) =}\StringTok{ "review"}
+\NormalTok{match_corpus =}\StringTok{ }\KeywordTok{Corpus}\NormalTok{(}\KeywordTok{VectorSource}\NormalTok{(df_review}\OperatorTok{$}\NormalTok{review))}
+
+\NormalTok{stopwords_malay =}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"ini"}\NormalTok{,}\StringTok{"dan"}\NormalTok{,}\StringTok{"yang"}\NormalTok{,}\StringTok{"buat"}\NormalTok{,}\StringTok{"mcm"}\NormalTok{,}\StringTok{"kat"}\NormalTok{,}\StringTok{"apa"}\NormalTok{,}\StringTok{"mmg"}\NormalTok{,}
+                    \StringTok{"dah"}\NormalTok{,}\StringTok{"saya"}\NormalTok{,}\StringTok{"lagi"}\NormalTok{,}\StringTok{"dgn"}\NormalTok{,}\StringTok{"ada"}\NormalTok{,}\StringTok{"bin"}\NormalTok{,}\StringTok{"aku"}\NormalTok{,}\StringTok{"pastu"}\NormalTok{,}\StringTok{"untuk"}\NormalTok{,}\StringTok{"perlu"}\NormalTok{)}
+\NormalTok{junk_words =}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"nescaya"}\NormalTok{, }\StringTok{"sedang"}\NormalTok{, }\StringTok{"tiap"}\NormalTok{, }\StringTok{"antara"}\NormalTok{, }\StringTok{"ialah"}\NormalTok{,}\StringTok{"bagi"}\NormalTok{, }\StringTok{"dalam"}\NormalTok{, }\StringTok{"oleh"}\NormalTok{, }\StringTok{"pada"}\NormalTok{, }\StringTok{"daripada"}\NormalTok{, }\StringTok{"kerana"}\NormalTok{, }\StringTok{"dapat"}\NormalTok{, }\StringTok{"adalah"}\NormalTok{,}\StringTok{"kami"}\NormalTok{,}\StringTok{"sesungguhnya"}\NormalTok{,}\StringTok{"tidak"}\NormalTok{,}\StringTok{"itu"}\NormalTok{,}\StringTok{"kepada"}\NormalTok{,}\StringTok{"dari"}\NormalTok{,}\StringTok{"maka"}\NormalTok{,}\StringTok{"dengan"}\NormalTok{,}\StringTok{"akan"}\NormalTok{,}\StringTok{"telah"}\NormalTok{,}\StringTok{"atau"}\NormalTok{,}\StringTok{"juga"}\NormalTok{,}\StringTok{"pula"}\NormalTok{,}\StringTok{"jika"}\NormalTok{,}\StringTok{"serta"}\NormalTok{,}\StringTok{"supaya"}\NormalTok{,}\StringTok{"mereka"}\NormalTok{,}\StringTok{"orang"}\NormalTok{,}\StringTok{"kamu"}\NormalTok{,}\StringTok{"lah"}\NormalTok{)}
+
+\NormalTok{tdm =}\StringTok{ }\KeywordTok{TermDocumentMatrix}\NormalTok{(}
+\NormalTok{  match_corpus,}
+  \DataTypeTok{control =} \KeywordTok{list}\NormalTok{(}
+    \DataTypeTok{removePunctuation =} \OtherTok{TRUE}\NormalTok{,}
+    \DataTypeTok{stopwords =} \KeywordTok{c}\NormalTok{(stopwords_malay,}\KeywordTok{stopwords}\NormalTok{(}\StringTok{"english"}\NormalTok{),junk_words),}
+    \DataTypeTok{removeNumbers =} \OtherTok{TRUE}\NormalTok{, }\DataTypeTok{tolower =} \OtherTok{TRUE}
+\NormalTok{  )}
+\NormalTok{)}
+
+\CommentTok{#plot(tdm, terms = findFreqTerms(tdm, lowfreq = 2)[1:50], corThreshold = 0.5)}
+\NormalTok{tdm2 <-}\StringTok{ }\KeywordTok{removeSparseTerms}\NormalTok{(tdm, }\DataTypeTok{sparse =} \FloatTok{0.9}\NormalTok{)}
+\NormalTok{m <-}\StringTok{ }\KeywordTok{as.matrix}\NormalTok{(tdm2)}
+\NormalTok{DataExplorer}\OperatorTok{::}\KeywordTok{plot_correlation}\NormalTok{(}\KeywordTok{t}\NormalTok{(m))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-2-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#DataExplorer::plot_prcomp(t(m))}
+
+\NormalTok{v <-}\StringTok{ }\KeywordTok{sort}\NormalTok{(}\KeywordTok{rowSums}\NormalTok{(m), }\DataTypeTok{decreasing =} \OtherTok{TRUE}\NormalTok{)}
+\CommentTok{#wordcloud}
+\NormalTok{word_freqs =}\StringTok{ }\KeywordTok{sort}\NormalTok{(}\KeywordTok{rowSums}\NormalTok{(m), }\DataTypeTok{decreasing=}\OtherTok{TRUE}\NormalTok{) }
+\NormalTok{dm =}\StringTok{ }\KeywordTok{data.frame}\NormalTok{(}\DataTypeTok{word=}\KeywordTok{names}\NormalTok{(word_freqs), }\DataTypeTok{freq=}\NormalTok{word_freqs)}
+\NormalTok{dm}\OperatorTok{$}\NormalTok{freq <-}\StringTok{ }\KeywordTok{as.numeric}\NormalTok{(dm}\OperatorTok{$}\NormalTok{freq)}
+\NormalTok{colors=}\KeywordTok{rev}\NormalTok{(}\KeywordTok{colorRampPalette}\NormalTok{(}\KeywordTok{brewer.pal}\NormalTok{(}\DecValTok{9}\NormalTok{,}\StringTok{"Dark2"}\NormalTok{))(}\DecValTok{32}\NormalTok{)[}\KeywordTok{seq}\NormalTok{(}\DecValTok{8}\NormalTok{,}\DecValTok{32}\NormalTok{,}\DecValTok{6}\NormalTok{)])}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning in brewer.pal(9, "Dark2"): n too large, allowed maximum for palette Dark2 is 8
+## Returning the palette you asked for with that many colors
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{suppressWarnings}\NormalTok{(}\KeywordTok{suppressMessages}\NormalTok{(}\KeywordTok{wordcloud}\NormalTok{(dm}\OperatorTok{$}\NormalTok{word, dm}\OperatorTok{$}\NormalTok{freq , }\DataTypeTok{random.order=}\NormalTok{F, }\DataTypeTok{colors =}\NormalTok{ colors, }\DataTypeTok{min.freq=}\DecValTok{1}\NormalTok{, }\DataTypeTok{max.words=}\DecValTok{100}\NormalTok{ ,  }\DataTypeTok{rot.per=}\FloatTok{0.55}\NormalTok{, }\DataTypeTok{scale =} \KeywordTok{c}\NormalTok{(}\DecValTok{5}\NormalTok{,}\DecValTok{1}\NormalTok{))))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-2-2.pdf}
+
+\hypertarget{including-plots}{%
+\subsection{Including Plots}\label{including-plots}}
+
+You can also embed plots, for example:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{dfUnit <-}\StringTok{ }\KeywordTok{as.data.frame}\NormalTok{(}\KeywordTok{head}\NormalTok{(dm,}\DecValTok{20}\NormalTok{))}
+\NormalTok{dfUnit}\OperatorTok{$}\NormalTok{word <-}\StringTok{ }\KeywordTok{rownames}\NormalTok{(dfUnit)}
+\KeywordTok{rownames}\NormalTok{(dfUnit) <-}\StringTok{ }\KeywordTok{c}\NormalTok{()}
+\NormalTok{dfUnit}\OperatorTok{$}\NormalTok{word <-}\StringTok{ }\KeywordTok{toupper}\NormalTok{(dfUnit}\OperatorTok{$}\NormalTok{word)}
+\KeywordTok{barplot}\NormalTok{(dm[}\DecValTok{1}\OperatorTok{:}\DecValTok{20}\NormalTok{,]}\OperatorTok{$}\NormalTok{freq, }\DataTypeTok{las =} \DecValTok{2}\NormalTok{, }\DataTypeTok{names.arg =} \KeywordTok{toupper}\NormalTok{(dm[}\DecValTok{1}\OperatorTok{:}\DecValTok{20}\NormalTok{,]}\OperatorTok{$}\NormalTok{word),}
+        \DataTypeTok{col =} \KeywordTok{topo.colors}\NormalTok{(}\DecValTok{20}\NormalTok{), }\DataTypeTok{main =} \KeywordTok{paste0}\NormalTok{(}\StringTok{"Top 20 Most Frequent Words - "}\NormalTok{, }\KeywordTok{stri_unescape_unicode}\NormalTok{(surah) ),}
+        \DataTypeTok{ylab =} \StringTok{"Keyword"}\NormalTok{ , }\DataTypeTok{cex.axis=}\FloatTok{0.6}\NormalTok{, }\DataTypeTok{cex.names=}\FloatTok{0.6}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning in title(main = main, sub = sub, xlab = xlab, ylab = ylab, ...):
+## conversion failure on 'Top 20 Most Frequent Words - Surah Al-An'aam - سورة
+## الأنعام' in 'mbcsToSbcs': dot substituted for <d8>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in title(main = main, sub = sub, xlab = xlab, ylab = ylab, ...):
+## conversion failure on 'Top 20 Most Frequent Words - Surah Al-An'aam - سورة
+## الأنعام' in 'mbcsToSbcs': dot substituted for <b3>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in title(main = main, sub = sub, xlab = xlab, ylab = ylab, ...):
+## conversion failure on 'Top 20 Most Frequent Words - Surah Al-An'aam - سورة
+## الأنعام' in 'mbcsToSbcs': dot substituted for <d9>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in title(main = main, sub = sub, xlab = xlab, ylab = ylab, ...):
+## conversion failure on 'Top 20 Most Frequent Words - Surah Al-An'aam - سورة
+## الأنعام' in 'mbcsToSbcs': dot substituted for <88>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in title(main = main, sub = sub, xlab = xlab, ylab = ylab, ...):
+## conversion failure on 'Top 20 Most Frequent Words - Surah Al-An'aam - سورة
+## الأنعام' in 'mbcsToSbcs': dot substituted for <d8>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in title(main = main, sub = sub, xlab = xlab, ylab = ylab, ...):
+## conversion failure on 'Top 20 Most Frequent Words - Surah Al-An'aam - سورة
+## الأنعام' in 'mbcsToSbcs': dot substituted for <b1>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in title(main = main, sub = sub, xlab = xlab, ylab = ylab, ...):
+## conversion failure on 'Top 20 Most Frequent Words - Surah Al-An'aam - سورة
+## الأنعام' in 'mbcsToSbcs': dot substituted for <d8>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in title(main = main, sub = sub, xlab = xlab, ylab = ylab, ...):
+## conversion failure on 'Top 20 Most Frequent Words - Surah Al-An'aam - سورة
+## الأنعام' in 'mbcsToSbcs': dot substituted for <a9>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in title(main = main, sub = sub, xlab = xlab, ylab = ylab, ...):
+## conversion failure on 'Top 20 Most Frequent Words - Surah Al-An'aam - سورة
+## الأنعام' in 'mbcsToSbcs': dot substituted for <d8>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in title(main = main, sub = sub, xlab = xlab, ylab = ylab, ...):
+## conversion failure on 'Top 20 Most Frequent Words - Surah Al-An'aam - سورة
+## الأنعام' in 'mbcsToSbcs': dot substituted for <a7>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in title(main = main, sub = sub, xlab = xlab, ylab = ylab, ...):
+## conversion failure on 'Top 20 Most Frequent Words - Surah Al-An'aam - سورة
+## الأنعام' in 'mbcsToSbcs': dot substituted for <d9>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in title(main = main, sub = sub, xlab = xlab, ylab = ylab, ...):
+## conversion failure on 'Top 20 Most Frequent Words - Surah Al-An'aam - سورة
+## الأنعام' in 'mbcsToSbcs': dot substituted for <84>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in title(main = main, sub = sub, xlab = xlab, ylab = ylab, ...):
+## conversion failure on 'Top 20 Most Frequent Words - Surah Al-An'aam - سورة
+## الأنعام' in 'mbcsToSbcs': dot substituted for <d8>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in title(main = main, sub = sub, xlab = xlab, ylab = ylab, ...):
+## conversion failure on 'Top 20 Most Frequent Words - Surah Al-An'aam - سورة
+## الأنعام' in 'mbcsToSbcs': dot substituted for <a3>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in title(main = main, sub = sub, xlab = xlab, ylab = ylab, ...):
+## conversion failure on 'Top 20 Most Frequent Words - Surah Al-An'aam - سورة
+## الأنعام' in 'mbcsToSbcs': dot substituted for <d9>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in title(main = main, sub = sub, xlab = xlab, ylab = ylab, ...):
+## conversion failure on 'Top 20 Most Frequent Words - Surah Al-An'aam - سورة
+## الأنعام' in 'mbcsToSbcs': dot substituted for <86>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in title(main = main, sub = sub, xlab = xlab, ylab = ylab, ...):
+## conversion failure on 'Top 20 Most Frequent Words - Surah Al-An'aam - سورة
+## الأنعام' in 'mbcsToSbcs': dot substituted for <d8>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in title(main = main, sub = sub, xlab = xlab, ylab = ylab, ...):
+## conversion failure on 'Top 20 Most Frequent Words - Surah Al-An'aam - سورة
+## الأنعام' in 'mbcsToSbcs': dot substituted for <b9>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in title(main = main, sub = sub, xlab = xlab, ylab = ylab, ...):
+## conversion failure on 'Top 20 Most Frequent Words - Surah Al-An'aam - سورة
+## الأنعام' in 'mbcsToSbcs': dot substituted for <d8>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in title(main = main, sub = sub, xlab = xlab, ylab = ylab, ...):
+## conversion failure on 'Top 20 Most Frequent Words - Surah Al-An'aam - سورة
+## الأنعام' in 'mbcsToSbcs': dot substituted for <a7>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in title(main = main, sub = sub, xlab = xlab, ylab = ylab, ...):
+## conversion failure on 'Top 20 Most Frequent Words - Surah Al-An'aam - سورة
+## الأنعام' in 'mbcsToSbcs': dot substituted for <d9>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in title(main = main, sub = sub, xlab = xlab, ylab = ylab, ...):
+## conversion failure on 'Top 20 Most Frequent Words - Surah Al-An'aam - سورة
+## الأنعام' in 'mbcsToSbcs': dot substituted for <85>
+\end{verbatim}
+
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-3-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{top_words <-}\StringTok{ }\KeywordTok{head}\NormalTok{(dm,}\DecValTok{20}\NormalTok{)}
+
+\ControlFlowTok{for}\NormalTok{(i }\ControlFlowTok{in} \DecValTok{1}\OperatorTok{:}\KeywordTok{nrow}\NormalTok{(top_words))}
+\NormalTok{\{}
+\NormalTok{  assoc <-}\StringTok{ }\KeywordTok{as.data.frame}\NormalTok{(}\KeywordTok{head}\NormalTok{(}\KeywordTok{findAssocs}\NormalTok{(tdm, }\DataTypeTok{terms =} \KeywordTok{toString}\NormalTok{(top_words}\OperatorTok{$}\NormalTok{word[i]),}\DataTypeTok{corlimit =} \FloatTok{0.00001}\NormalTok{),}\DecValTok{100000}\NormalTok{))}
+\NormalTok{  assoc}\OperatorTok{$}\NormalTok{watchword <-}\StringTok{ }\KeywordTok{rownames}\NormalTok{(assoc)}
+  \KeywordTok{rownames}\NormalTok{(assoc) <-}\StringTok{ }\KeywordTok{c}\NormalTok{()}
+  \KeywordTok{names}\NormalTok{(assoc)[}\DecValTok{1}\NormalTok{] =}\StringTok{ "correlation"}
+\NormalTok{  assoc}\OperatorTok{$}\NormalTok{watchword <-}\StringTok{ }\KeywordTok{toupper}\NormalTok{(assoc}\OperatorTok{$}\NormalTok{watchword)}
+  \KeywordTok{max}\NormalTok{(assoc}\OperatorTok{$}\NormalTok{correlation)}
+  \ControlFlowTok{for}\NormalTok{(x }\ControlFlowTok{in} \DecValTok{1}\OperatorTok{:}\KeywordTok{nrow}\NormalTok{(assoc))}
+\NormalTok{  \{}
+\NormalTok{    assoc}\OperatorTok{$}\NormalTok{correlation[x] <-}\StringTok{ }\NormalTok{assoc}\OperatorTok{$}\NormalTok{correlation[x] }\OperatorTok{+}\StringTok{ }\KeywordTok{runif}\NormalTok{(}\DataTypeTok{n=}\DecValTok{1}\NormalTok{, }\DataTypeTok{min =} \DecValTok{0}\NormalTok{, }\DataTypeTok{max =}\NormalTok{ (}\DecValTok{1}\OperatorTok{-}\NormalTok{assoc}\OperatorTok{$}\NormalTok{correlation[x]))}\OperatorTok{/}\DecValTok{100}
+\NormalTok{  \}}
+  
+\NormalTok{  assoc <-}\StringTok{ }\NormalTok{assoc[}\KeywordTok{order}\NormalTok{(}\OperatorTok{-}\NormalTok{assoc}\OperatorTok{$}\NormalTok{correlation),]}
+  \KeywordTok{barplot}\NormalTok{(assoc[}\DecValTok{1}\OperatorTok{:}\DecValTok{20}\NormalTok{,]}\OperatorTok{$}\NormalTok{correlation, }\DataTypeTok{las =} \DecValTok{2}\NormalTok{, }\DataTypeTok{names.arg =}\NormalTok{ assoc[}\DecValTok{1}\OperatorTok{:}\DecValTok{20}\NormalTok{,]}\OperatorTok{$}\NormalTok{watchword,}
+          \DataTypeTok{col =} \KeywordTok{terrain.colors}\NormalTok{(}\DecValTok{20}\NormalTok{), }\DataTypeTok{main =}\KeywordTok{paste}\NormalTok{(}\StringTok{"Rank No "}\NormalTok{,i,}\StringTok{". Correlation of Keyword '"}\NormalTok{,}\KeywordTok{toupper}\NormalTok{(top_words}\OperatorTok{$}\NormalTok{word[i]),}\StringTok{"'."}\NormalTok{,}\DataTypeTok{sep =} \StringTok{""}\NormalTok{),}
+          \DataTypeTok{ylab =} \StringTok{"Correlation"}\NormalTok{ ,  }\DataTypeTok{cex.axis=}\FloatTok{0.6}\NormalTok{, }\DataTypeTok{cex.names=}\FloatTok{0.6}\NormalTok{)}
+
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-3-2.pdf}
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-3-3.pdf}
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-3-4.pdf}
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-3-5.pdf}
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-3-6.pdf}
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-3-7.pdf}
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-3-8.pdf}
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-3-9.pdf}
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-3-10.pdf}
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-3-11.pdf}
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-3-12.pdf}
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-3-13.pdf}
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-3-14.pdf}
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-3-15.pdf}
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-3-16.pdf}
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-3-17.pdf}
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-3-18.pdf}
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-3-19.pdf}
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-3-20.pdf}
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-3-21.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#panderOptions('table.alignment.default',}
+\CommentTok{#     function(df) ifelse(sapply(df, is.numeric), 'right', 'left'))}
+\CommentTok{#pander(head(j,45))}
+\CommentTok{#print(head(j,45))}
+\NormalTok{tdm2 <-}\StringTok{ }\KeywordTok{removeSparseTerms}\NormalTok{(tdm, }\DataTypeTok{sparse =} \FloatTok{0.9}\NormalTok{)}
+\NormalTok{hc <-}\StringTok{ }\KeywordTok{hclust}\NormalTok{(}\DataTypeTok{d =} \KeywordTok{dist}\NormalTok{(tdm2, }\DataTypeTok{method =} \StringTok{"canberra"}\NormalTok{), }\DataTypeTok{method =} \StringTok{"complete"}\NormalTok{)}
+\KeywordTok{plot}\NormalTok{(hc)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-3-22.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{plot}\NormalTok{(hc, }\DataTypeTok{xlab=}\StringTok{"xlab"}\NormalTok{, }\DataTypeTok{ylab=}\StringTok{"ylab"}\NormalTok{, }\DataTypeTok{main=}\StringTok{"main"}\NormalTok{, }\DataTypeTok{sub=}\StringTok{""}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-3-23.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# reduced label size}
+\KeywordTok{par}\NormalTok{(}\DataTypeTok{cex=}\FloatTok{0.4}\NormalTok{, }\DataTypeTok{mar=}\KeywordTok{c}\NormalTok{(}\DecValTok{5}\NormalTok{, }\DecValTok{8}\NormalTok{, }\DecValTok{4}\NormalTok{, }\FloatTok{0.1}\NormalTok{))}
+\KeywordTok{plot}\NormalTok{(hc, }\DataTypeTok{xlab=}\StringTok{"Word List"}\NormalTok{, }\DataTypeTok{ylab=}\StringTok{"Height"}\NormalTok{, }\DataTypeTok{main=}\StringTok{"Happiness Survey Cluster Canberra Dendogram"}\NormalTok{, }\DataTypeTok{sub=}\StringTok{""}\NormalTok{, }\DataTypeTok{axes=}\OtherTok{TRUE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Al_Quran_Analysis_files/figure-latex/unnamed-chunk-3-24.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{par}\NormalTok{(}\DataTypeTok{cex=}\DecValTok{1}\NormalTok{)}
+\CommentTok{#title(xlab="xlab", ylab="ylab", main="Cluster Dendogram")}
+\CommentTok{#axis(2)}
+\end{Highlighting}
+\end{Shaded}
+
+Note that the \texttt{echo\ =\ FALSE} parameter was added to the code
+chunk to prevent printing of the R code that generated the plot.
+
+
+\end{document}
