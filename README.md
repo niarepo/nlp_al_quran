@@ -20,7 +20,7 @@
 
 ## Installation
 
-Use the R , please install below components
+Please install below R library/packages before excecute the R code
 
 ```r
 library(curl)
