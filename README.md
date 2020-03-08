@@ -1,4 +1,4 @@
-# Al-Quran Karim NLP using R (Malay Language)
+# Al-Quran Karim NLP in (Malay Language) using R 
 
 ![Image description](word_cloud_20.png)
 ![Image description](top_word_20.png)
@@ -9,8 +9,7 @@
 * The Malay translation source is from - http://www.surah.my . Thanks.
 * Original arabic version is from - https://github.com/niarepo/quran-nlp . Thanks
 
-## Other research
-
+## Other related research
 * https://blog.cinqmarsmedia.com/is-islam-a-religion-of-peace-aea607622476
 * https://www.kaggle.com/zusmani/the-holy-quran/discussion/42994
 * https://ieeexplore.ieee.org/document/8566248
