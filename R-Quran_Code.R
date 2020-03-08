@@ -42,7 +42,7 @@ print(df_summary_q)
 DataExplorer::plot_boxplot(df_summary_q , by = "juzuk")
 
 
-mining <- q_content %>% filter(juz == 7) 
+mining <- q_content %>% filter(juz == 2) 
 surah <- unique(mining$surah)
 
 q_juz_summary <- dbReadTable(conn,"q_juz_summary")
@@ -140,8 +140,7 @@ layout(matrix(c(1, 2), nrow=2), heights=c(1, 4))
 par(mar=rep(0, 4))
 plot.new()
 text(x=0.5, y=0.5, paste0("WordCloud ",surah))
-suppressWarnings(suppressMessages(wordcloud(dm$word, dm$freq , random.order=F, colors = colors, min.freq=1, max.words=200 ,  rot.per=0.55, 
-                                             scale = c(1,1))))
+suppressWarnings(suppressMessages(wordcloud(dm$word, dm$freq , random.order=F, colors = colors, min.freq=1, max.words=200 ,  rot.per=0.55)))
 
 assoc <- as.data.frame(head(findAssocs(tdm, terms = toString("allah"),corlimit = 0.00001),100000))
 assoc$watchword <- rownames(assoc)
@@ -244,9 +243,11 @@ dfUnit <- as.data.frame(head(dm,20))
 dfUnit$word <- rownames(dfUnit)
 rownames(dfUnit) <- c()
 dfUnit$word <- toupper(dfUnit$word)
+png(paste0("top_word_20.png"), width = 1024, height = 768, type=c('cairo'),res=150,pointsize=8)
 barplot(dm[1:20,]$freq, las = 2, names.arg = toupper(dm[1:20,]$word),
-        col = topo.colors(20), main = paste0("Top 20 Most Frequent Words Al_Quran"),
+        col = topo.colors(20), main = paste0("Top 20 Most Frequent Words Al_Quran in ",surah),
         ylab = "Keyword" , cex.axis=0.6, cex.names=0.6)
+dev.off()
 
 top_words <- head(dm,20)
 
@@ -264,11 +265,20 @@ for(i in 1:nrow(top_words))
   }
   
   assoc <- assoc[order(-assoc$correlation),]
+  png(paste0("word_asc-",i,".png"), width = 1024, height = 768, type=c('cairo'),res=150,pointsize=8)
   barplot(assoc[1:20,]$correlation, las = 2, names.arg = assoc[1:20,]$watchword,
-          col = terrain.colors(20), main =paste("Rank No ",i,". Correlation of Keyword '",toupper(top_words$word[i]),"'.",sep = ""),
+          col = terrain.colors(20), main =paste("Rank No ",i,". Correlation of Keyword '",toupper(top_words$word[i]),"' in ",surah ,sep = ""),
           ylab = "Correlation" ,  cex.axis=0.6, cex.names=0.6)
+  dev.off()
   
 }
+
+
+tdm2 <- removeSparseTerms(tdm, sparse = 0.94)
+hc <- hclust(d = dist(tdm2, method = "canberra"), method = "complete")
+plot(hc)
+plot(hc, xlab="xlab", ylab="ylab", main=surah, sub="")
+
 
 assoc <- as.data.frame(head(findAssocs(tdm, terms = toString("bosan"),corlimit = 0.00001),100000))
 assoc$watchword <- rownames(assoc)
